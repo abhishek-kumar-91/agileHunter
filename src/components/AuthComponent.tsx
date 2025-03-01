@@ -11,7 +11,7 @@ interface AuthComponentProps {
 
 function AuthComponent({urlLink, urlText, emailBtn, googleBtn}: AuthComponentProps) {
   return (
-    <div className="w-full h-full flex justify-center items-center   2xl:pb-36">
+    <div className="w-full h-full flex justify-center items-center pt-10  2xl:pb-36">
         <div className="w-[360px] h-[397px] bg-[#ffffffcc] flex flex-col gap-3  rounded-3xl border border-gray-200 p-6">
           <div className="w-full flex flex-col gap-5 pb-3  border-b-2 border-gray-100">
            <div className=" flex items-center justify-between">
