@@ -130,7 +130,8 @@ export function Navbar() {
    
     </div>
       <Link href={"/signin"} className="w-full md:w-[25%] flex justify-end">
-              <button className="bg-gray-100 font-bold duration-300 hover:bg-gray-500 hover:text-white py-2 px-4 text-xs text-gray-600 rounded-full">TRY AGILEHUNT FOR FREE</button>
+              <button className="bg-gray-100 font-bold duration-300 hover:bg-gray-500 hover:text-white py-2 px-4 text-xs text-gray-600 rounded-full">
+                TRY FOR FREE</button>
     </Link>
     </div>
   )
