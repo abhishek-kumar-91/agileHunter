@@ -54,11 +54,12 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navbar() {
   return (
-    <div className="w-[80%] flex justify-between items-center fixed backdrop-blur-lg bg-white/30 mx-[10%] mt-5 py-4 px-8 rounded-xl shadow-lg">
-      
-      <NavigationMenu>
+
+    <div className="w-[80%]  border-2 flex md:justify-between md:items-center fixed backdrop-blur-lg bg-white/30 mx-[10%] mt-5 py-2 px-8 rounded-xl shadow-lg">
+            <Image src={"/images/navlogo.png"} alt="logo" width={24} height={24} className="mr-6 " />
+    <div className="hidden md:flex md:justify-center w-full">
+    <NavigationMenu>
       <NavigationMenuList>
-      <Image src={"/images/navlogo.png"} alt="logo" width={24} height={24} className="mr-6" />
         <NavigationMenuItem>
         <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -124,8 +125,12 @@ export function Navbar() {
       </NavigationMenuList>
     </NavigationMenu>
 
-    <Link href={"/signin"}>
-              <button className="bg-gray-100 font-bold duration-300 hover:bg-gray-500 hover:text-white py-3 px-4 text-xs text-gray-600 rounded-full">TRY AGILEHUNT FOR FREE</button>
+ 
+   
+   
+    </div>
+      <Link href={"/signin"} className="w-full md:w-[25%] flex justify-end">
+              <button className="bg-gray-100 font-bold duration-300 hover:bg-gray-500 hover:text-white py-2 px-4 text-xs text-gray-600 rounded-full">TRY AGILEHUNT FOR FREE</button>
     </Link>
     </div>
   )
