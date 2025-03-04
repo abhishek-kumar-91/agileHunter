@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 export function Navbar() {
   return (
 
-    <div className="w-[80%]  border-2 flex md:justify-between md:items-center fixed backdrop-blur-lg bg-white/30 mx-[5%] md:mx-[10%] mt-5 py-3 px-8 rounded-xl shadow-lg">
+    <div className="w-[90%] md:w-[80%]  border-2 flex md:justify-between md:items-center fixed backdrop-blur-lg bg-white/30 mx-[5%] md:mx-[10%] mt-5 py-3 px-8 rounded-xl shadow-lg">
             <Image src={"/images/navlogo.png"} alt="logo" width={24} height={24} className="mr-6 " />
     <div className="hidden md:flex md:justify-center w-full">
     <NavigationMenu>
