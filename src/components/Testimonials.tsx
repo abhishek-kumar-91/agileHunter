@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+
 const testimonials = [
   {
     company: "TechGuard",
@@ -70,7 +71,7 @@ const Testimonials = () => {
                 />
                 <h3 className="text-xl font-semibold text-gray-700">{testimonial.company}</h3>
               </div>
-              <p className="mt-4 text-gray-400">"{testimonial.feedback}"</p>
+              <p className="mt-4 text-gray-400">{testimonial.feedback}</p>
             </motion.div>
           ))}
         </div>
