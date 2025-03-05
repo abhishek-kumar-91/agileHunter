@@ -9,7 +9,7 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <div className=" flex flex-col justify-center  items-center bg-[url('/images/gradient-light.png')] bg-no-repeat bg-[length:150%_150%]  bg-center m-h-screen">
-       <div className="w-[90%] md:w-[80%] ">
+       <div className="w-full md:w-[80%] ">
          <HeroBanner />
          <GettingStarted />
          <Services />

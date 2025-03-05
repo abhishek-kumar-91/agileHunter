@@ -5,8 +5,10 @@ function HeroBanner() {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 py-10 md:py-20 w-full mt-10 md:mt-16">
       {/* Left Section (Text Content) */}
-      <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
-        <AnimatedText text="Agilehunt - Guarding your innovations." />
+      <div className="w-full md:w-1/2 h-auto text-center md:text-left space-y-6">
+        <div className="mb-12"> {/* Added margin-bottom for spacing */}
+          <AnimatedText text="Agilehunt - Guarding your innovations." />
+        </div>
         <h4 className="text-sm text-gray-800 leading-relaxed">
           Our proficiency extends across a wide array of technology stacks, enabling us to conduct
           comprehensive support penetration tests. From Angular to Next.js, React to Python, Svelte
