@@ -1,9 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
+import { div } from "framer-motion/client";
 import Image from "next/image";
 
 const About = () => {
   return (
+    <div className="w-full flex justify-center">
+    <div className="w-full md:w-[80%]">
     <div className="min-h-screen pt-32  text-gray-700 py-16 px-6 md:px-12">
       {/* Container */}
       <motion.div
@@ -13,14 +16,17 @@ const About = () => {
         className="max-w-4xl mx-auto text-center space-y-6"
       >
         {/* Header */}
-        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-          Introducing <span className="text-gray-900">AGILE HUNT</span>
+        <h1 className="text-5xl pb-6 md:text-5xl  font-bold bg-gradient-to-r from-blue-400  to-purple-500 text-transparent bg-clip-text">
+          Introducing <span className="text-gray-900 md:inline block ">AGILE HUNT</span>
         </h1>
 
         {/* Subtext */}
-        <p className="text-lg text-gray-300 leading-relaxed">
-          Your ultimate cybersecurity ally. With a laser focus on safeguarding your digital landscape,
-          we specialize in a range of services that ensure your systems stay fortified against evolving threats.
+        <p className="text-lg text-gray-400 pt-7 leading-relaxed">
+        Your ultimate cybersecurity ally. With a laser focus on safeguarding your digital landscape, we specialize in a range of services that ensure your systems stay fortified against evolving threats. From the meticulous pentesting of mobile, web, and network applications to executing precise Red Team exercises, we're here to enhance your security posture.
+
+We delve deep into the world of Open-Source Intelligence (OSINT) to unveil potential vulnerabilities and threats. Our dedicated team employs an agile approach to provide you with rapid, adaptive solutions that match the ever-changing cybersecurity landscape.
+
+
         </p>
       </motion.div>
 
@@ -76,6 +82,8 @@ const About = () => {
           Get in Touch
         </button>
       </motion.div>
+    </div>
+    </div>
     </div>
   );
 };
