@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
-
+import Image from "next/image";
 const testimonials = [
   {
     company: "TechGuard",
@@ -61,10 +61,12 @@ const Testimonials = () => {
               transition={{ duration: 0.3 }}
             >
               <div className="flex items-center space-x-4">
-                <img
+                <Image
                   src={testimonial.logo}
                   alt={testimonial.company}
-                  className="w-12 h-12 object-contain"
+                  width={40}
+                  height={40}
+                  
                 />
                 <h3 className="text-xl font-semibold text-gray-700">{testimonial.company}</h3>
               </div>
