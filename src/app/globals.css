@@ -67,3 +67,22 @@
   }
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+/* @keyframes border-glow {
+  0% { border-color: cyan; box-shadow: 0 0 10px cyan; }
+  50% { border-color: blue; box-shadow: 0 0 20px blue; }
+  100% { border-color: cyan; box-shadow: 0 0 10px cyan; }
+}
+
+.animate-border-glow {
+  animation: border-glow 3s infinite alternate;
+} */
+

@@ -75,7 +75,7 @@ export function Navbar() {
 
 console.log(toggle, "toggle")
   return (
-    <div ref={menuRef} className="w-[90%] md:w-[80%]  border-2 flex md:justify-between md:items-center fixed backdrop-blur-lg bg-white/30 mx-[5%] md:mx-[10%] mt-5 py-3 px-8 rounded-xl shadow-lg">
+    <div ref={menuRef} className="w-[90%] z-50 md:w-[80%]  border-2 flex md:justify-between md:items-center fixed bg-white mx-[5%] md:mx-[10%] mt-5 py-3 px-8 rounded-xl shadow-lg">
       <Link href="/" className="cursor-pointer">
         <Image
           src={"/images/navlogo.png"}
